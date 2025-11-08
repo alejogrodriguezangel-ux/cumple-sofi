@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💌 Adivina la persona 💌</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="card fade-in" id="intro">
+      <h1>💌 Adivina la persona 💌</h1>
+      <p>Te daré unas pistas... al final sabrás de quién se trata 💖</p>
+      <button id="startBtn">Comenzar</button>
+    </section>
+
+    <section class="card fade-in" id="pista" style="display:none">
+      <div class="small" id="contador"></div>
+      <div class="pista-text" id="textoPista">Pista aquí</div>
+      <div class="controls">
+        <button id="nextBtn">Siguiente ➡️</button>
+      </div>
+      <div class="progress"><i id="progressBar"></i></div>
+    </section>
+
+    <section class="card fade-in" id="final" style="display:none">
+      <canvas id="confetti"></canvas>
+      <div class="final">
+        <div class="cake">🎂</div>
+        <div class="big rainbow">¡Feliz cumpleaños, Sofi!</div>
+        <div class="sub">Eres increíble, linda y muy especial 💕</div>
+        <button id="restart">Volver a ver</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Hecho con cariño 💫</footer>
+
+  <!-- Música estilo "In the Pool" (libre de derechos) -->
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/08/12/audio_6b7b64b09f.mp3?filename=soft-piano-ambient-117997.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
